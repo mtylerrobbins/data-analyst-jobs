@@ -57,8 +57,36 @@ Select unique job titles from the data_analyst_jobs table. How many are there?
 
 881
 
+The data for this exercise has been derived from the Indeed Data Scientist/Analyst/Engineer dataset on kaggle.com
+
+Provide the SQL queries and answers for the following questions/tasks using the data_analyst_jobs table you have created in PostgreSQL:
+
+How many unique job titles are there for California companies?
+
+230
+
+Find the name of each company and its average star rating for all companies that have more than 5000 reviews across all locations. How many companies are there with more that 5000 reviews across all locations?
+
+2
+
+The data for this exercise has been derived from the Indeed Data Scientist/Analyst/Engineer dataset on kaggle.com
+
+Provide the SQL queries and answers for the following questions/tasks using the data_analyst_jobs table you have created in PostgreSQL:
+
+Add the code to order the query in #9 from highest to lowest average star rating. Which company with more than 5000 reviews across all locations in the dataset has the highest star rating? What is that rating?
+
+IBM 3.9
+
+The data for this exercise has been derived from the Indeed Data Scientist/Analyst/Engineer dataset on kaggle.com
+
+Provide the SQL queries and answers for the following questions/tasks using the data_analyst_jobs table you have created in PostgreSQL:
+
+Find all the job titles that contain the word ‘Analyst’. How many different job titles are there?
+
+1636
+
 */
 
-SELECT COUNT(DISTINCT title)
+SELECT COUNT(title)
 FROM data_analyst_jobs
-
+WHERE title LIKE '%Analyst%'
